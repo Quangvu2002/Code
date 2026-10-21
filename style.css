@@ -44,11 +44,124 @@ li {
 }
 
 button{
-    padding: 05px 16px;
+  padding: 05px 16px;
   color: white;
   background-color: #1565c0;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   position: left;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  background-color: #f5f7fb;
+}
+
+h1 {
+  color: #234e8a;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th,
+td {
+  border: 1px solid #d5dbe5;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #3178c6;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f6fc;
+}
+.attendance-button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.attendance-button.present {
+  background-color: #28a745;
+}
+
+.attendance-button.absent {
+  background-color: #dc3545;
+}
+
+.attendance-button:hover {
+  opacity: 0.85;
+}
+.form-section {
+  max-width: 900px;
+  margin: 0 auto 30px;
+  padding: 24px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#student-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333333;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #cfd5df;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.add-button {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3178c6;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #245f9f;
+}
+
+#student-message {
+  min-height: 24px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #245f9f;
+}
+
+@media (max-width: 700px) {
+  #student-form {
+    grid-template-columns: 1fr;
+  }
 }
