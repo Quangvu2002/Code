@@ -28,6 +28,101 @@
 
 <p id="message"></p>
   </main>
-  <script src="script.js"></script>
+<section class="form-section">
+  <h2>Thêm thiếu nhi mới</h2>
+
+  <form id="student-form">
+    <div class="form-group">
+      <label for="student-id">Mã thiếu nhi</label>
+
+      <input
+        type="text"
+        id="student-id"
+        placeholder="Ví dụ: TN005"
+        required
+      >
+    </div>
+
+    <div class="form-group">
+      <label for="student-name">Họ và tên</label>
+
+      <input
+        type="text"
+        id="student-name"
+        placeholder="Nhập họ và tên"
+        required
+      >
+    </div>
+
+    <div class="form-group">
+      <label for="student-birth-year">Năm sinh</label>
+
+      <input
+        type="number"
+        id="student-birth-year"
+        placeholder="Ví dụ: 2015"
+        required
+      >
+    </div>
+
+    <div class="form-group">
+      <label for="student-class">Lớp</label>
+
+      <input
+        type="text"
+        id="student-class"
+        placeholder="Ví dụ: Ấu 3"
+        required
+      >
+    </div>
+
+    <div class="form-group">
+      <label for="student-branch">Ngành</label>
+
+      <select id="student-branch" required>
+        <option value="">-- Chọn ngành --</option>
+        <option value="Chiên Con">Chiên Con</option>
+        <option value="Ấu Nhi">Ấu Nhi</option>
+        <option value="Thiếu Nhi">Thiếu Nhi</option>
+        <option value="Sống Đạo">Sống Đạo</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="student-status">Điểm danh</label>
+
+      <select id="student-status">
+        <option value="true">Có mặt</option>
+        <option value="false">Vắng mặt</option>
+      </select>
+    </div>
+
+    <button type="submit" class="add-button">
+      Thêm thiếu nhi
+    </button>
+  </form>
+
+  <p id="student-message"></p>
+</section>
+<h1>Danh sách thiếu nhi</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>STT</th>
+      <th>Mã số</th>
+      <th>Họ và tên</th>
+      <th>Năm sinh</th>
+      <th>Lớp</th>
+      <th>Ngành</th>
+      <th>Điểm danh</th>
+    </tr>
+  </thead>
+
+  <tbody id="student-list">
+  </tbody>
+</table>
+
+<script src="script.js"></script>
 </body>
 </html>
